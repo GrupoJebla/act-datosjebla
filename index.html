@@ -1,0 +1,388 @@
+<!DOCTYPE HTML5>
+<HTML lang="es">
+    <HEAD>
+        <meta charset="UTF-8">
+        <title>Actualización de datos de personal</title>
+        <link rel="stylesheet" href="estilos.css">
+    </HEAD>
+    <BODY>
+        <header class="header">
+            <div class="container logo-nav-container">
+                <img src="logo.png" alt="Logo de la empresa" width="392" height="80">
+                <a href="#" class="nevigation">ACTUALIZACIÓN DE DATOS DE PERSONAL</a>
+            </div>
+        </header>
+        <form id="formulario" name="registrar" method="POST" class="form-register" data-netlify="true">
+            <h2 class="form__titulo">DATOS PERSONALES</h2>
+            <div class="contenedor-inputs">
+                <span class="etiquetas">Centro de Trabajo</span>
+                <span class="input-50"></span>
+                <span class="etiquetas">Fecha de Actualización</span>
+                <span class="span-100"></span>
+                <input list="empresa" name="empresa" class="input-20" placeholder="Empresa" required>
+                <datalist id="empresa">
+                    <option value="Jebla, S.A. de C.V."></option>
+                    <option value="Sibagas Operadora, S.A. de C.V."></option>
+                    <option value="Prestadora de Gas, S.A. de C.V."></option>
+                    <option value="Gas Residencial, S.A. de C.V."></option>
+                    <option value="Rana Gas, S.A. de C.V."></option>
+                    <option value="Gas Tocotin, S.A. de C.V."></option>
+                    <option value="Comercializadora Dinagas, S.A. de C.V."></option>
+                    <option value="Distribuidora Van Gas, S.A. de C.V."></option>
+                    <option value="Transportes Jebla, S.A. de C.V."></option>
+                    <option value="PetroJebla, S.A. de C.V."></option>
+                    <option value="Administradora Sibagas, S.A. de C.V."></option>
+                    <option value="Biogas, S.A. de C.V."></option>
+                    <option value="Transportes Prestadora, S.A. de C.V."></option>
+                    <option value="Jebla Motors, S.A. de C.V."></option>
+                    <option value="AutoJebla Tampico, S.A. de C.V."></option>
+                    <option value="AutoJebla Victoria, S.A. de C.V."></option>
+                    <option value="Automotores Jebla, S.A. de C.V."></option>
+                    <option value="Nueva Jebla, S.A. de C.V."></option>
+                    <option value="Tersa del Golfo, S.A. de C.V."></option>
+                    <option value="Tersa Mundi, S.A. de C.V."></option>
+                    <option value="Técnicas Especiales, S.A. de C.V."></option>
+                    <option value="Fraccionamiento Residencial San Marcos, S.A. de C.V."></option>
+                    <option value="Marina Vieja, S.A. de C.V."></option>
+                    <option value="Distribuidora de Equipos, S.A. de C.V."></option>
+                </datalist>
+                <input list="sucursal" name="sucursal" class="input-20" placeholder="Sucursal" required>
+                <datalist id="sucursal">
+                    <option value="Corporativo"></option>
+                    <option value="Valles"></option>
+                    <option value="Huizache"></option>
+                    <option value="Ebano"></option>
+                    <option value="Victoria"></option>
+                    <option value="Tampico"></option>
+                    <option value="Estación Manuel"></option>
+                    <option value="Mante"></option>
+                    <option value="Xicotencatl"></option>
+                    <option value="Cerro Azul"></option>
+                    <option value="Soledad"></option>
+                    <option value="Tamazunchale"></option>
+                    <option value="Tuxpan"></option>
+                    <option value="Poza Rica"></option>
+                    <option value="Matamoros"></option>
+                    <option value="Monterrey"></option>
+                    <option value="Querétaro"></option>
+                    <option value="San Jan Del Río"></option>
+                    <option value="Celaya"></option>
+                    <option value="Acapulco"></option>
+                    <option value="Chilpancingo"></option>
+                    <option value="Chilipa"></option>
+                    <option value="Iguala"></option>
+                    <option value="Arcelia"></option>
+                    <option value="Altamirano"></option>
+                    <option value="Huetamo"></option>
+                    <option value="Tecpan"></option>
+                    <option value="Zihuatanejo"></option>
+                    <option value="Pachuca"></option>
+                </datalist>
+                <span class="input-38"></span>
+                <div class="formulario__grupo-input" id="grupo__fecha">
+                    <input type="date" name="fecha" id="fecha" style="width: 170px;" required>
+                </div>
+                <div class="formulario__grupo-input" id="grupo__paterno">
+                    <input type="text" name="paterno" placeholder="Apellido paterno" style="width: 280px" class="formulario__input" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <div class="formulario__grupo-input" id="grupo__materno">
+                    <input type="text" name="materno" placeholder="Apellido materno" style="width: 280px" class="formulario__input" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <div class="formulario__grupo-input" id="grupo__nombres">
+                    <input type="text" name="nombres" placeholder="Nombre(s)" style="width: 280px" class="formulario__input" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <span class="input-100"></span>
+                <div class="formulario__grupo-input" id="grupo__domicilio">
+                    <input type="text" name="domicilio" style="width: 1048px; text-align: center;" placeholder="Domicilio actual (Calle, número, colonia)" class="formulario__input" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <span class="input-100"></span>
+                <div class="formulario__grupo-input" id="grupo__municipio">
+                    <input type="text" name="municipio" placeholder="Municipio" class="formulario__input" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <div class="formulario__grupo-input" id="grupo__estado">
+                    <input type="text" name="estado" placeholder="Estado" class="formulario__input" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <div class="formulario__grupo-input" id="grupo__codigoP">
+                    <input type="text" name="CP" placeholder="Código postal" style="width: 120px;" class="formulario__input" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <div class="formulario__grupo-input" id="grupo__nacimiento">
+                    <input type="text" name="nacimiento" style="width: 320px;" placeholder="Lugar de nacimiento (Municipio, Estado)" class="formulario__input" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <div class="formulario__grupo-input" id="grupo__telFijo">
+                    <input type="text" name="telefonoFijo" placeholder="Teléfono fijo" class="formulario__input">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <div class="formulario__grupo-input" id="grupo__telCel">
+                    <input type="text" name="telefonoCel" placeholder="Teléfono Celular" class="formulario__input" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <div class="formulario__grupo-input" id="grupo__email">
+                    <input type="email" name="email" placeholder="Correo electrónico" class="formulario__input" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <span class="span-100">En caso de emergencia avisar a:</span>
+                <div class="formulario__grupo-input" id="grupo__emergencia">
+                    <input type="text" name="emergenciaAvisar" placeholder="Nombre completo" class="formulario__input" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <div class="formulario__grupo-input" id="grupo__telEmergencia">
+                    <input type="text" name="telefonoEmergencia" placeholder="Teléfono" class="formulario__input" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <div class="formulario__grupo-input" id="grupo__parentezco">
+                    <input type="text" name="parentezco" placeholder="Parentezco" class="formulario__input" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <span class="span-100">Estado civil:</span>
+                <span class="input-13"></span>
+                Soltero/a:<input type="radio" value="soltero" name="estadoCivil" class="etiquetas-50" required/>
+                Casado/a:<input type="radio" value="casado" name="estadoCivil" class="etiquetas-50" required/>
+                Viudo/a:<input type="radio" value="viudo" name="estadoCivil" class="etiquetas-50" required/>
+                Divorciado/a:<input type="radio" value="divorciado" name="estadoCivil" class="etiquetas-50" required/>
+                Union libre:<input type="radio" value="unionLibre" name="estadoCivil" class="etiquetas-50" required/>
+                <span class="input-13"></span>
+                <span class="span-100"></span>
+                <div class="formulario__grupo-input" id="grupo__tipoSangre">
+                    <input type="text" name="tipoSangre" placeholder="Tipo de sangre" style="width: 120px;" class="formulario__input" required> 
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <span class="etiquetas-50">Es alérgico/a a algún medicamento:</span>
+                Si:<input type="radio" value="Si" name="alergico" id="alergico" required>
+                No:<input type="radio" value="No" name="alergico" id="alergico" required>
+                <div class="formulario__grupo-input" id="grupo__medicamento">
+                    <input type="text" name="medicamento" id="medicamento" style="width: 620px;" placeholder="Especifique medicamento" class="formulario__input">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <span class="etiquetas-50">Padece alguna enfermedad:</span>
+                Si:<input type="radio" value="Si" name="enfermedad"  required>
+                No:<input type="radio" value="No" name="enfermedad" required>
+                <div class="formulario__grupo-input" id="grupo__enfermedad">
+                    <input type="text" name="enfermedadExp" style="width: 750px;"  placeholder="Especifique enfermedad o control permanente"
+                class="formulario__input"> 
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <div class="formulario__grupo-input" id="grupo__nivAcad">
+                    <input type="text" name="nivAcademico" placeholder="Nivel acedémico" class="formulario__input" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <span class="etiquetas-50">Estudia actualmente:</span>
+                Si:<input type="radio" value="Si" name="estudia" required>
+                No:<input type="radio" value="No" name="estudia" required>
+                <div class="formulario__grupo-input" id="grupo__institucion">
+                    <input type="text" name="institucion" style="width: 620px;"  placeholder="Institución" class="formulario__input">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                
+                <span class="span-100">Esposa o concuvina(o):</span>
+                <div class="formulario__grupo-input" id="grupo__concuvina">
+                    <input type="text" name="nomConcuvina" style="width: 300px;" placeholder="Nombre completo" class="formulario__input">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <span class="etiquetas-25">Trabaja:</span>
+                Si:<input type="radio" value="Si" name="trabajaPareja">
+                No:<input type="radio" value="No" name="trabajaPareja">
+                <div class="formulario__grupo-input" id="grupo__lugTrabajo">
+                    <input type="text" name="lugarTrabajo" placeholder="Lugar de trabajo" class="formulario__input">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <div class="formulario__grupo-input" id="grupo__puesto">
+                    <input type="text" name="puesto" style="width: 150px;" placeholder="Puesto" class="formulario__input">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <div class="formulario__grupo-input" id="grupo__antiguedad">
+                    <input type="text" name="antiguedad" style="width: 190px;" placeholder="Antigüedad (años. meses)" class="formulario__input">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+            </div>
+            <span class="span-espacio"></span>
+            <h2 class="form__titulo">DATOS DE HIJOS</h2>
+            <div class="contenedor-inputs">
+
+                <span class="span-100">HIJO 1</span>
+                <div class="formulario__grupo-input" id="grupo__hnombres1">
+                    <input type="text" name="nombres1" style="width: 300px;" placeholder="Nombre(s)" class="formulario__input">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <div class="formulario__grupo-input" id="grupo__hapellidos1">
+                    <input type="text" name="apellidos1" style="width: 300px;" placeholder="Apellidos" class="formulario__input">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <span class="etiquetas-50">Fecha de nacimiento:</span>
+                <input type="date" name="nacimiento1" class="formulario__input">
+                <div class="formulario__grupo-input" id="grupo__hedad1">
+                    <input type="number" name="edad1" style="width: 80px;" placeholder="Edad" class="formulario__input" min="0" max="120">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <span class="span-100"></span>
+                <span class="etiquetas-50">Nivel academico:</span>
+                <div class="formulario__grupo-input" id="grupo__hnivAcad1" class="formulario__input">
+                    <input list="nivelEducativo1" name="nivelAcademico1">
+                    <datalist id="nivelEducativo1">
+                        <option value="Preescolar"></option>
+                        <option value="Primaria"></option>
+                        <option value="Secundaria"></option>
+                        <option value="Bachillerato"></option>
+                        <option value="Universidad"></option>
+                    </datalist>
+                </div>
+                <span class="etiquetas-25">Grado:</span>
+                <div class="formulario__grupo-input" id="grupo__hgrado1" class="formulario__input">
+                    <input type="number" name="grado1" style="width: 160px;" placeholder="Seleccione del 1-12" min="1" max="12">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <span class="etiquetas-80">Depende económicamente de usted:</span>
+                SI:<input type="radio" value="Si" name="depende1">
+                NO:<input type="radio" value="No" name="depende1">
+                <span class="etiquetas-25">Vive con usted:</span>
+                SI:<input type="radio" value="Si" name="vive1">
+                NO:<input type="radio" value="No" name="vive1">
+
+
+                <span class="span-100">HIJO 2</span>
+                <div class="formulario__grupo-input" id="grupo__hnombres2">
+                    <input type="text" name="nombres2" style="width: 300px;" placeholder="Nombre(s)" class="formulario__input">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <div class="formulario__grupo-input" id="grupo__hapellidos2">
+                    <input type="text" name="apellidos2" style="width: 300px;" placeholder="Apellidos" class="formulario__input">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <span class="etiquetas-50">Fecha de nacimiento:</span>
+                <input type="date" name="nacimiento2" class="formulario__input">
+                <div class="formulario__grupo-input" id="grupo__hedad2">
+                    <input type="number" name="edad2" style="width: 80px;" placeholder="Edad" class="formulario__input" min="0" max="120">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <span class="span-100"></span>
+                <span class="etiquetas-50">Nivel academico:</span>
+                <div class="formulario__grupo-input" id="grupo__hnivAcad2" class="formulario__input">
+                    <input list="nivelEducativo2" name="nivelAcademico2">
+                    <datalist id="nivelEducativo2">
+                        <option value="Preescolar"></option>
+                        <option value="Primaria"></option>
+                        <option value="Secundaria"></option>
+                        <option value="Bachillerato"></option>
+                        <option value="Universidad"></option>
+                    </datalist>
+                </div>
+                <span class="etiquetas-25">Grado:</span>
+                <div class="formulario__grupo-input" id="grupo__hgrado2" class="formulario__input">
+                    <input type="number" name="grado2" style="width: 160px;" placeholder="Seleccione del 1-12" min="1" max="12">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <span class="etiquetas-80">Depende económicamente de usted:</span>
+                SI:<input type="radio" value="Si" name="depende2">
+                NO:<input type="radio" value="No" name="depende2">
+                <span class="etiquetas-25">Vive con usted:</span>
+                SI:<input type="radio" value="Si" name="vive2">
+                NO:<input type="radio" value="No" name="vive2">
+
+                <span class="span-100">HIJO 3</span>
+                <div class="formulario__grupo-input" id="grupo__hnombres3">
+                    <input type="text" name="nombres3" style="width: 300px;" placeholder="Nombre(s)" class="formulario__input">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <div class="formulario__grupo-input" id="grupo__hapellidos3">
+                    <input type="text" name="apellidos3" style="width: 300px;" placeholder="Apellidos" class="formulario__input">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <span class="etiquetas-50">Fecha de nacimiento:</span>
+                <input type="date" name="nacimiento3" class="formulario__input">
+                <div class="formulario__grupo-input" id="grupo__hedad3">
+                    <input type="number" name="edad3" style="width: 80px;" placeholder="Edad" class="formulario__input" min="0" max="120">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <span class="span-100"></span>
+                <span class="etiquetas-50">Nivel academico:</span>
+                <div class="formulario__grupo-input" id="grupo__hnivAcad3" class="formulario__input">
+                    <input list="nivelEducativo1" name="nivelAcademico3" >
+                    <datalist id="nivelEducativo3">
+                        <option value="Preescolar"></option>
+                        <option value="Primaria"></option>
+                        <option value="Secundaria"></option>
+                        <option value="Bachillerato"></option>
+                        <option value="Universidad"></option>
+                    </datalist>
+                </div>
+                <span class="etiquetas-25">Grado:</span>
+                <div class="formulario__grupo-input" id="grupo__hgrado3" class="formulario__input">
+                    <input type="number" name="grado3" style="width: 160px;" placeholder="Seleccione del 1-12" min="1" max="12">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <span class="etiquetas-80">Depende económicamente de usted:</span>
+                SI:<input type="radio" value="Si" name="depende3">
+                NO:<input type="radio" value="No" name="depende3">
+                <span class="etiquetas-25">Vive con usted:</span>
+                SI:<input type="radio" value="Si" name="vive3">
+                NO:<input type="radio" value="No" name="vive3">
+
+                <span class="span-100">HIJO 4</span>
+                <div class="formulario__grupo-input" id="grupo__hnombres4">
+                    <input type="text" name="nombres4" style="width: 300px;" placeholder="Nombre(s)" class="formulario__input">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <div class="formulario__grupo-input" id="grupo__hapellidos4">
+                    <input type="text" name="apellidos4" style="width: 300px;" placeholder="Apellidos" class="formulario__input">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <span class="etiquetas-50">Fecha de nacimiento:</span>
+                <input type="date" name="nacimiento4" class="formulario__input">
+                <div class="formulario__grupo-input" id="grupo__hedad4">
+                    <input type="number" name="edad4" style="width: 80px;" placeholder="Edad" class="formulario__input" min="0" max="120">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <span class="span-100"></span>
+                <span class="etiquetas-50">Nivel academico:</span>
+                <div class="formulario__grupo-input" id="grupo__hnivAcad4" class="formulario__input">
+                    <input list="nivelEducativo4" name="nivelAcademico4">
+                    <datalist id="nivelEducativo4">
+                        <option value="Preescolar"></option>
+                        <option value="Primaria"></option>
+                        <option value="Secundaria"></option>
+                        <option value="Bachillerato"></option>
+                        <option value="Universidad"></option>
+                    </datalist>
+                </div>
+                <span class="etiquetas-25">Grado:</span>
+                <div class="formulario__grupo-input" id="grupo__hgrado4" class="formulario__input">
+                    <input type="number" name="grado4" style="width: 160px;" placeholder="Seleccione del 1-12" min="1" max="12">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <span class="etiquetas-80">Depende económicamente de usted:</span>
+                SI:<input type="radio" value="Si" name="depende4">
+                NO:<input type="radio" value="No" name="depende4">
+                <span class="etiquetas-25">Vive con usted:</span>
+                SI:<input type="radio" value="Si" name="vive4">
+                NO:<input type="radio" value="No" name="vive4">
+                <span class="span-100"></span>
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellene el formulario correctamente. </p>
+                </div>
+                <button type="submit" class="btn-enviar">REGISTRAR</button>
+            
+                <span class="span-100"></span>
+                <p class="leyendas">La información es solicitada con el fin de actualizar nuestros registros de Personal.
+                    Por la  importancia <br> de estos datos, requerimos que éste formato sea diligenciado con letra
+                     legible o imprenta .
+                </p>
+                <br />
+                <p class="leyendas">Lo anterior, en la inteligencia de nosotros nos comprometemos a proteger en términos de los artículos <br>
+                    6, 7, 8, 12, 13 y 14, de la Ley Federal de protección de datos personales en posesión de los particulares, <br>
+                    los datos personales que en contestación a esta solicitud usted nos proporcione y a usar esos propios datos <br>
+                    para fines estrictamente lícitos</p>
+            </div>
+        </form>
+        <h2 class="form__espacio"></h2>
+        <script src="formulario.js"></script>
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymus"></script>
+    </BODY>
+</HTML>
+
